@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav bar  */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vw;
+    background-color: #76ABAE;
+    border-bottom: 2px solid;
+    border-color: gray;
+    box-shadow: 0px 0px 20px  ;
+    
+
+        
+}
+/* logo */
+.left>a{
+    text-decoration:none ;
+}
+.left>a>h1{
+     font-size: 2.3vw;
+     cursor: pointer;
+     color:#222831;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.left>a>h1>span{
+    color: #31363F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+/* icons */
+.social-media{
+    display: flex;
+    margin-top: 3vw;
+    margin-right: 30vw;
+}
+.icons{
+    display: flex; 
+    gap: 1vw;
+
+}
+.icons>.linked-in{
+    width: 1.2vw;
+
+}
+.icons>.instagram{
+    width: 1.2vw;
+
+}
+.icons>.twitter{
+    width: 1.2vw;
+
+}
+
+
+/* elements */
+.right>ul{
+       display: flex;
+       list-style-type: none;
+       gap: 4vw;
+       height: 2vw;
+       border: 2px solid black;
+       border: hidden;
+
+ 
+}
+.right>ul>li{
+      border-bottom: 2px solid black;
+      border-bottom: hidden;
+      padding: 2px 5px ;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+
+}
+
+
+.right>ul>li>a{
+       font-size: 1.4vw;
+       font-weight: 540;
+       text-decoration:none ;
+       color: black;
+
+}
+
+
+.right>ul>li:hover{
+    border-bottom: 2px solid black;
+    padding: 2px 5px ;
+}
+ 
+
+/*option selection  bar  */
+ 
+
+.select>svg{
+    height: 2vw;
+    width: 1.5vw;
+    display:none;
+}
+/* android veiw */
+@media (max-width:550px) {
+    /* navbar */
+    nav{
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20vw;
+
+    }
+
+    /* selection burger */
+    .select>svg{
+        font-size: 10vw ;
+        display: block;
+        width: 5vw ;
+        height: 5vh; 
+    }
+
+    /* social media icons */
+    .social-media{
+        display: none;
+
+    }
+
+    /* left logo */
+    .left>a>h1{
+        font-size: 7vw; 
+        color:#222831;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .left>a>h1>span{
+        color: #31363F;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+    }
+    /* elements */
+    .right>ul{
+        display: none;
+    }
+    
+}  
+/* main content */
+
+.intropage{
+    /* background-color: aqua; */
+    height: 89vh;
+    width: 100%;
+    background-image: url(asset/hero4\ img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 3330;
+    display: flex;
+    
+
+
+}
+
+/* main first div */
+.main-first{
+   width: 50%;
+   height: 100%;  
+   /* background-color: #0b4c4f;   */
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+
+
+}
+.intro{
+
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(63, 70, 70);
+    
+}
+.intro>p>.name{
+
+    font-size: 4vw;
+    font-weight: 600;
+    color:#426f71;
+   font-family:cursive;
+    text-decoration:underline;
+
+    
+}
+.intro>p>.surname{
+    font-weight: 600;
+    font-size: 4vw;
+    color: #d19003;
+   font-family:cursive;
+    text-decoration:underline;
+
+}
+.intro>button{
+    padding:0.7vw 2vw;
+    font-size: 1.3vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #3e787b;
+    
+    
+}
+.intro>button>a{
+    text-decoration: none;
+    color: white;
+
+}
+@media (max-width:550px) {
+        
+     .intropage{
+        display:inline-block;
+        height: 95vh;
+
+     }
+     .main-first{
+        display: flex;
+        padding-left:3vw ;
+        justify-content: flex-start;
+        width: 100%;
+        height: 50%;
+        line-height: 8vw;
+
+     }
+
+     .intro{
+        font-size: 6vw;
+     }
+
+     .intro>p>.name,
+     .intro>p>.surname{
+        font-size: 8vw;
+     }
+
+     .main-second{
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+
+     }
+      .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:11vw;
+      }
+     .main-second>.second>.text{
+        display: flex;
+        justify-content: center;
+     }
+    
+     .main-second>.second>.image>svg{
+        
+        height: 25vw;
+        width: 25vw;
+            
+    }
+    .main-second>.second>.text>p{
+        font-size: 8vw;
+    }
+     .intro>button{
+        font-size: 3vw;
+        padding: 3vw 8vw;
+       
+        
+
+     }
+
+}
+
+/* main second div */
+.main-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+.second{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 8vw;
+
+
+}
+
+.main-second>.second>.text>p{
+    font-size: 3vw;
+}
+
+.main-second>.second>.image>svg{
+        
+    height: 15vw;
+    width: 15vw;
+    
+
+        
+}
+/* footer */
+footer{
+    height: 30vw;
+    background-color: black;
+    color: white;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    /* width: 85vw; */
+    border-bottom:1px solid  #31363F;
+    padding-right: 5vw;
+    height: 26vw;
+    
+
+}
+.txt{
+    height: 20vw;
+    width: 25vw;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    padding-left:5vw ;
+    padding-top: 5vw;
+    line-height: 1.5vw;
+
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2vw;
+  
+
+
+}
+
+.elements>ul>li{
+    list-style-type: none;
+    cursor: pointer;
+    line-height: 2vw;
+}
+.elements>button{
+    padding: 0.5vw 4vw;
+    border-radius: 0.5vw;
+    background-color: #76ABAE;
+    border: none;
+    font-weight: 600;
+
+}
+.elements>button>a{
+    text-decoration: none ;
+    color:black;
+    font-size: 1.2vw;
+
+}
+/* copy right section */
+.cpright{
+    display: flex;
+    justify-content: center;
+
+}
+.cpright>p{
+
+    font-size: 1.2vw;
+}
+
+.cpright>p>.cp>svg{
+    height: 1vw;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+
+
+

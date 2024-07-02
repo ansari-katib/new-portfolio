@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0.1vw;
     padding: 0;
     box-sizing: border-box;
 }
@@ -220,11 +220,13 @@ nav{
      }
      .main-first{
         display: flex;
-        padding-left:3vw ;
-        justify-content: flex-start;
+        padding-left: 3vw;
+        justify-content: space-evenly;
         width: 100%;
         height: 50%;
         line-height: 8vw;
+        flex-direction: row;
+        align-items: center;
 
      }
 
@@ -240,7 +242,7 @@ nav{
      .main-second{
         display: none;
         justify-content: center;
-        align-items: center;
+        align-items: row;
 
 
      }
@@ -283,10 +285,7 @@ nav{
     
 }
 .second{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-left: 8vw;
+
 
 
 }
@@ -303,6 +302,9 @@ nav{
 
         
 }
+
+
+
 /* footer */
 footer{
     height: 30vw;
